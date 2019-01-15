@@ -7,7 +7,13 @@ typedef struct eleSorter {
     struct eleSorter *next;
 } sorterList;
 
+typedef struct mergePointer {
+    int *ptr, size;
+    struct mergePointer *next;
+} mergePtr;
+
 void BubbleSort(int* arr,int iSize);
+void MergeSort(int *arr, int iSize);
 
 sorterList *addNode(sorterList *list, char *name, void (*fun)(int *, int));
 void freeList(sorterList *list);

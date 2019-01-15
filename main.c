@@ -12,6 +12,7 @@ int main()
     sorterList *list = NULL;
     int *arr;
 
+    list = addNode(list, "Merge sort", MergeSort);
     list = addNode(list, "Bubble sort", BubbleSort);
 
     arr = RandomArr(vSize);
