@@ -12,8 +12,10 @@ typedef struct mergePointer {
     struct mergePointer *next;
 } mergePtr;
 
-void BubbleSort(int* arr,int iSize);
+void BubbleSort(int *arr, int iSize);
 void MergeSort(int *arr, int iSize);
+void QuickSort(int *arr, int iSize);
+void QSort(int *left, int *right);
 
 sorterList *addNode(sorterList *list, char *name, void (*fun)(int *, int));
 void freeList(sorterList *list);

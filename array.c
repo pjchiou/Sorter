@@ -40,3 +40,12 @@ void OutputArr(int* arr,int iSize)
         printf("%d,", arr[i]);
     printf("\n");
 }
+
+int Check(int *arr, int iSize)
+{
+    for (int i = 0; i < iSize - 1; i++) {
+        if (arr[i] > arr[i + 1])
+            return (0);
+    }
+    return (1);
+}
